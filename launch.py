@@ -17,7 +17,7 @@ def loadmodel(logger):
         top_p=1.0,
         frequency_penalty=1.0
     )
-    logger.info(f"Model fetched: {model_name}")
+    logger.info(f"Model fetched")
     return openai_model
 
 def preprocessing(data, logger):
