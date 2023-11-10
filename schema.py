@@ -1,6 +1,9 @@
-from pydantic import BaseModel
 
-# sample Predict Schema 
-# Make sure the key is 'data' and your data can be of any type 
+from pydantic import BaseModel as PydanticBaseModel
+
+class BaseModel(PydanticBaseModel):
+    class Config:
+        arbitrary_types_allowed = True
+
 class PredictSchema(BaseModel):
     data: str
