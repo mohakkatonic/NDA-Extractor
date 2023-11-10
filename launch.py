@@ -27,7 +27,7 @@ def preprocessing(data, logger):
     # Modify the prompt to guide the model in extracting information
     final_prompt = (
         f"You are an NDA (Non-Disclosure Agreement) reader expert, who specializes in reviewing and understanding the intricacies of confidentiality agreements. You possess a deep understanding of legal language and can interpret the terms and conditions outlined in NDAs to ensure clarity and protection of sensitive information for all parties involved. Extract the following information from the given NDA document content:\n"
-        f"Context: {data}\n"
+        f"Context: {data['data']}\n"
         f"Information to extract: Client Name, Contract Start Date, Contract End Date, Special Terms for Renewal\n"
         f"Extracted Information: "
     )
