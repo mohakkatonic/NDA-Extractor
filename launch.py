@@ -13,7 +13,7 @@ def loadmodel(logger):
         model_name=os.environ.get("MODEL_NAME", "gpt-3.5-turbo-16k"),
         openai_api_key=os.environ.get("API_KEY"),
         temperature=0.7,
-        max_tokens=1000,
+        max_tokens=2048,
         top_p=1.0,
         frequency_penalty=1.0
     )
