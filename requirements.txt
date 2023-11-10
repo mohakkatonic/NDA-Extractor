@@ -1,4 +1,2 @@
 langchain==0.0.199
-pydantic 
-requests
 openai==0.27.8
