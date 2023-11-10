@@ -10,7 +10,7 @@ from schema import PredictSchema
 def loadmodel(logger):
     """Get the model"""
     openai_model = OpenAI(
-        model_name="gpt-3.5-turbo-16k"
+        model_name="gpt-3.5-turbo-16k",
         openai_api_key=os.environ.get("API_KEY"),
         temperature=0.7,
         max_tokens=1000,
