@@ -28,15 +28,15 @@ def preprocessing(data, logger):
     final_prompt =(
         f"""
     You are an NDA (Non-Disclosure Agreement) reader expert, who specializes in reviewing and understanding the intricacies of confidentiality agreements. You possess a deep understanding of legal language and can interpret the terms and conditions outlined in NDAs to ensure clarity and protection of sensitive information for all parties involved. Extract the following information from the given NDA document content:
-    Context: {data['data']}.
-    Information to extract: Client Name, Contract Start Date, Contract End Date, Special Terms for Renewal.
+    Client Name, Contract Start Date, Contract End Date, Special Terms for Renewal.
     Extract based on below definitions:
     Client Name: The legal or business name of the party involved in the NDA. Give complete name of the party involved.
     Contract Start Date: The specific date when the contractual agreement covered by the NDA begins. Give only date as output.
-    Contract End Date: The date marking the termination or expiration of the contractual agreement specified in the NDA.
-    If the contract end date is not specified directly, in such cases, the duration of confidentiality is often addressed in the "Survival" clause. Calculate the end date from there and give output as only date for contract end date. No other explanation needed.
+    Contract End Date: The date marking the termination or expiration of the contractual agreement specified in the NDA. If the contract end date is not specified directly, in such cases, the duration of confidentiality is often addressed in the "Survival" clause. Calculate the end date from there and give output as only date for contract end date. No other explanation needed.
     Special Terms for Renewal: Unique conditions or provisions in the NDA outlining terms for contract renewal.
-    Extracted Information:
+    Special terms for renewal in an NDA encompass provisions related to notice periods, amendment procedures, review of confidential information, changes in circumstances, conditions for renewal, duration of the renewed term, negotiation processes, termination rights, and continued confidentiality obligations to ensure the effective and secure management of confidential information during the renewal period. In output, give terms of renewal briefly in points.
+    Give output in JSON format with below keys:
+    {Client Name, Contract Start Date, Contract End Date, Special Terms for Renewal.}
     """
     )
 
