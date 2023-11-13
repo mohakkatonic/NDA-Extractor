@@ -31,10 +31,10 @@ def preprocessing(data, logger):
     Context: {data['data']}.
     Information to extract: Client Name, Contract Start Date, Contract End Date, Special Terms for Renewal.
     Extract based on below definitions:
-    Client Name: The legal or business name of the party involved in the NDA.
-    Contract Start Date: The specific date when the contractual agreement covered by the NDA begins.
+    Client Name: The legal or business name of the party involved in the NDA. Give complete name of the party involved.
+    Contract Start Date: The specific date when the contractual agreement covered by the NDA begins. Give only date as output.
     Contract End Date: The date marking the termination or expiration of the contractual agreement specified in the NDA.
-    If the contract end date is not specified directly, in such cases, the duration of confidentiality is often addressed in the "Survival" clause. Calculate the end date from there and give output as a date.
+    If the contract end date is not specified directly, in such cases, the duration of confidentiality is often addressed in the "Survival" clause. Calculate the end date from there and give output as only date. No other explanation needed.
     Special Terms for Renewal: Unique conditions or provisions in the NDA outlining terms for contract renewal.
     Extracted Information:
     """
