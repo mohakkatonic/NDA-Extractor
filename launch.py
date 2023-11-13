@@ -36,7 +36,7 @@ def preprocessing(data, logger):
     Special Terms for Renewal: Unique conditions or provisions in the NDA outlining terms for contract renewal.
     Special terms for renewal in an NDA encompass provisions related to notice periods, amendment procedures, review of confidential information, changes in circumstances, conditions for renewal, duration of the renewed term, negotiation processes, termination rights, and continued confidentiality obligations to ensure the effective and secure management of confidential information during the renewal period. In output, give terms of renewal briefly in points.
     Give output in JSON format with below keys:
-    {Client Name, Contract Start Date, Contract End Date, Special Terms for Renewal.}
+    Client Name, Contract Start Date, Contract End Date, Special Terms for Renewal.
     """
     )
 
