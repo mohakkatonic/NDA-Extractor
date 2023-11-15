@@ -38,6 +38,7 @@ def preprocessing(data, logger):
     Input document content: {data["data"]}
     Give output in JSON format with below keys:
     Client Name, Contract Start Date, Contract End Date, Special Terms for Renewal.
+    Contract start and end date should strictly only contain the exact dates, no other explanation needed.
     """
     )
 
