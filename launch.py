@@ -35,7 +35,7 @@ def preprocessing(data, logger):
     Contract End Date: The date marking the termination or expiration of the contractual agreement specified in the NDA. If the contract end date is not specified directly, in such cases, the duration of confidentiality is often addressed in the "Survival" clause. Calculate the end date from there and give output as only date for contract end date. No other explanation needed.
     Special Terms for Renewal: Unique conditions or provisions in the NDA outlining terms for contract renewal.
     Special terms for renewal in an NDA encompass provisions related to notice periods, amendment procedures, review of confidential information, changes in circumstances, conditions for renewal, duration of the renewed term, negotiation processes, termination rights, and continued confidentiality obligations to ensure the effective and secure management of confidential information during the renewal period. In output, give terms of renewal briefly in points.
-    Input document content: {data['data']}
+    Input document content: {data["data"]}
     Give output in JSON format with below keys:
     Client Name, Contract Start Date, Contract End Date, Special Terms for Renewal.
     """
